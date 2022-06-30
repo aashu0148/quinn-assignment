@@ -1,0 +1,30 @@
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.title a {
+  text-decoration: none;
+  color: #2471d7;
+}
+
+.image {
+  border: 1px solid #000;
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+}
+
+.image img {
+  width: 100%;
+  object-fit: contain;
+}

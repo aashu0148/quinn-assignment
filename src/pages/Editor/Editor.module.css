@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.extraInput {
+  resize: none;
+  opacity: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.container .leftSidebar,
+.container .rightSidebar {
+  width: 200px;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.05);
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding: 10px 30px;
+  padding-bottom: 0;
+}
+
+.leftSidebar .list,
+.rightSidebar .list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.leftSidebar .list .item {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: 200ms;
+  user-select: none;
+}
+
+.leftSidebar .list .item:last-child {
+  border-bottom: none;
+}
+
+.leftSidebar .list .item:hover {
+  background: linear-gradient(to right, #eee, #ccc);
+}
+
+.main {
+  padding-top: 10px;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.main .canvasContainer {
+  width: 100%;
+  height: fit-content;
+}
+
+.main button {
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #4436e0;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.main button:active {
+  transform: translateY(2px);
+}
+
+.rightSidebar {
+  width: 250px !important;
+}
+
+.rightSidebar .list .item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.rightSidebar .list .item:last-child {
+  border-bottom: none;
+}
+
+.rightSidebar .list .item .title {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.rightSidebar .list .item input {
+  width: 100%;
+  min-width: fit-content;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
